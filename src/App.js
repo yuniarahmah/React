@@ -3,9 +3,12 @@ import { BrowserRouter, Route, Switch } from "react-router-dom/cjs/react-router-
 import "./App.css";
 import Intro from "./pages/intro";
 import Home from "./pages/home";
-import Detail from "./pages/detail";
+import DetailProduct from "./pages/detail_product";
 import Profile from "./pages/profile";
 import TesJs from "./pages/tes";
+import EditProduct from "./pages/edit";
+import About from "./pages/about";
+import TambahProduct from "./pages/tambah";
 
 function App() {
   return (
@@ -14,13 +17,16 @@ function App() {
       <Navbar />
       {/* <TesJs /> */}
       {/* <Profile /> */}
-      {/* <Home />/ */}
+      {/* <About /> */}
       <BrowserRouter>
       <main>
         <Switch>
           <Route path='/' component={Home} exact/>
           <Route path='/data' component={Profile} exact/>
-          <Route path='/lengkap/:id' exact component={Detail}/>
+          <Route path='/edit/:Id_saja' component={EditProduct} exact />
+          <Route path='/about' component={About} exact />
+          <Route path='/lengkap/:id' exact component={DetailProduct}/>
+          <Route path='/tambah' exact component={TambahProduct} />
         </Switch>
       </main>
       </BrowserRouter>

@@ -1,32 +1,30 @@
 import React, { useState, useEffect } from "react";
+import axios from "axios";
 
 const TesJs = () => {
   const [posts, setPosts] = useState([]);
 
   const getData = () => {
-    var requestOptions = {
-      method: "GET",
-      redirect: "follow",
-    };
-
-    fetch("http://localhost:3030/products", requestOptions)
-      .then((response) => response.json())
-      .then((result) => setPosts(result))
-      .catch((error) => console.log("error", error));
+    axios // axios berfungsi untuk request data melalui http
+      .get(`http://localhost:3030/makanan`) // mengambil data dari link tersebut
+      .then((res) => {
+        setPosts(res.data);
+      })
+      .catch((error) => {
+        alert("terjadi kesalahan" + error);
+      });
   };
-
   useEffect(() => {
     getData();
   }, []);
-
   return (
     <div>
       {posts.map((post) => (
-        <div key={post.id}>
+        <div key={post.id_user}>
           <h3>
-            <span>{post.id}</span> {post.title}
+            <span>{post.id_user}</span> {post.menu}
           </h3>
-          <p>{post.price}</p>
+          <p>{post.harga}</p>
         </div>
       ))}
     </div>

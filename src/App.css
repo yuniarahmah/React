@@ -51,8 +51,8 @@ button {
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
-  width: 60%;
-  margin: 2% 3% 2% 10%;
+  /* width: 40%; */
+  /* margin: 2% 2% 10% 5%; */
   /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); Add shadow effect */
 }
 
@@ -80,10 +80,6 @@ h1 {
 }
 /* background-color: #B4D4FF; */
 /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); Add shadow effect; */
-
-h3 {
-  margin-left: 10%;
-}
 
 /* .navbay {
   position: fixed;
@@ -118,4 +114,16 @@ header {
   padding-top: 8rem;
   justify-content: center;
   background-image: url();
+}
+
+p {
+  margin-left: 10%;
+}
+
+h3 {
+  margin-left: 10%;
+}
+
+.clicked {
+  transform: translateY(-20px); /* Move the card up */
 }
