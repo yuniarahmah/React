@@ -214,13 +214,6 @@ const Home = () => {
                   </Card>
                 </Link>
                 <Card.Body>
-                  <button
-                    onClick={() => (window.location.href = `/edit/${post.id}`)}
-                    style={{ marginLeft: "10px", border: "10" }}
-                  >
-                    Edit
-                  </button>
-                  <button onClick={() => deleteUser(post.id)} style={{ marginLeft: "10px", border: "10" }}>Hapus</button>
                 </Card.Body>
               </div>
             </div>

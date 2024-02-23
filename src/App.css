@@ -113,7 +113,7 @@ Nav.Link:hover {
 header {
   padding-top: 8rem;
   justify-content: center;
-  background-image: url();
+  background-image: url("https://png.pngtree.com/png-vector/20220929/ourlarge/pngtree-simple-style-ghost-cartoon-illustration-png-image_6220959.png");
 }
 
 p {
@@ -126,4 +126,40 @@ h3 {
 
 .clicked {
   transform: translateY(-20px); /* Move the card up */
+}
+
+.Auth-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+  height: 70vh;
+}
+
+.Auth-form {
+  width: 420px;
+  box-shadow: rgb(0 0 0 / 16%) 1px 1px 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.Auth-form-content {
+  padding-left: 12%;
+  padding-right: 12%;
+}
+
+.Auth-form-title {
+ margin-left: 40%;
+  margin-bottom: 1em;
+  font-size: 24px;
+  color: rgb(34, 34, 34);
+  font-weight: 800;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(34, 34, 34);
 }

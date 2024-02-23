@@ -1,11 +1,14 @@
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
-import React, { useState } from "react";
-import { Form, Card, Container, Row, Col } from "react-bootstrap";
+import React from "react";
+import { Form, Container } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 
 function navbar() {
+  const logout = () => {
+    localStorage.clear();
+    window.location.href = "/masuk";
+  };
   return (
     <div>
       <Navbar
@@ -56,6 +59,27 @@ function navbar() {
                 aria-label="Search"
               />
             </Form>
+            <div style={{ marginLeft: "5%", display: "flex", width: "20%" }}>
+              <Button
+                variant="link"
+                href="/masuk"
+                style={{ color: "white", textDecoration: "none" }}
+              >
+                Login
+              </Button>
+              <Button
+                variant="denger"
+                style={{
+                  marginLeft: "2%",
+                  border: "10%",
+                  borderRadius: "10%",
+                  color: "white",
+                }}
+                onClick={logout}
+              >
+                Logout
+              </Button>
+            </div>
           </Navbar.Collapse>
         </Container>
       </Navbar>

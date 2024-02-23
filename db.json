@@ -111,5 +111,32 @@
       "harga": "1000",
       "gambar": "https://cdn1-production-images-kly.akamaized.net/9_NfInxQnXc7Ow3I_9hW6zfFYNg=/1200x675/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/3469559/original/097026100_1622470321-delicious-ice-cream_144627-19516.jpg"
     }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "email": "yura@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": 2,
+      "email": "rara@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": 3,
+      "email": "mely@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": 4,
+      "email": "rahma@gmai.com",
+      "password": "412156"
+    },
+    {
+      "id": 5,
+      "email": "sinta@gmail.com",
+      "password": "123456"
+    }
   ]
 }
